@@ -175,7 +175,7 @@
             this.txtDescripcionRep.Location = new System.Drawing.Point(601, 78);
             this.txtDescripcionRep.MaxLength = 50;
             this.txtDescripcionRep.Name = "txtDescripcionRep";
-            this.txtDescripcionRep.Size = new System.Drawing.Size(345, 306);
+            this.txtDescripcionRep.Size = new System.Drawing.Size(495, 345);
             this.txtDescripcionRep.TabIndex = 9;
             this.txtDescripcionRep.Text = "";
             // 
@@ -201,9 +201,9 @@
             // 
             this.lstDatos.FormattingEnabled = true;
             this.lstDatos.ItemHeight = 25;
-            this.lstDatos.Location = new System.Drawing.Point(446, 538);
+            this.lstDatos.Location = new System.Drawing.Point(426, 538);
             this.lstDatos.Name = "lstDatos";
-            this.lstDatos.Size = new System.Drawing.Size(248, 129);
+            this.lstDatos.Size = new System.Drawing.Size(284, 129);
             this.lstDatos.TabIndex = 12;
             // 
             // frmVentaRepuestos
@@ -211,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1005, 689);
+            this.ClientSize = new System.Drawing.Size(1132, 689);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.lstDatos);
