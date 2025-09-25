@@ -10,14 +10,7 @@ using System.Windows.Forms;
 
 namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 {
-    public struct Repuesto
-    {
-        public int Numero;           // número de repuesto (único)
-        public string Descripcion;   // descripción
-        public char Marca;           // 'P', 'F' o 'R'
-        public string Origen;        // "Nacional" o "Importado"
-        public double Precio;        // precio
-    }
+    
     public partial class frmVentaRepuestos : Form
     {
         

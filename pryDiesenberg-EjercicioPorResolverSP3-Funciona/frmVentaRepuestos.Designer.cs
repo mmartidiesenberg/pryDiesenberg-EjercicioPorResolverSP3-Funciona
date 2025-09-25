@@ -39,7 +39,6 @@
             this.lblOrigen = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcionRep = new System.Windows.Forms.RichTextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -118,6 +117,7 @@
             // 
             // mskPrecio
             // 
+            this.mskPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskPrecio.Location = new System.Drawing.Point(258, 330);
             this.mskPrecio.Mask = "99999";
             this.mskPrecio.Name = "mskPrecio";
@@ -203,9 +203,9 @@
             // 
             this.lstDatos.FormattingEnabled = true;
             this.lstDatos.ItemHeight = 25;
-            this.lstDatos.Location = new System.Drawing.Point(426, 538);
+            this.lstDatos.Location = new System.Drawing.Point(414, 538);
             this.lstDatos.Name = "lstDatos";
-            this.lstDatos.Size = new System.Drawing.Size(284, 129);
+            this.lstDatos.Size = new System.Drawing.Size(308, 129);
             this.lstDatos.TabIndex = 12;
             // 
             // frmVentaRepuestos
@@ -239,7 +239,6 @@
         private System.Windows.Forms.Label lblOrigen;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Label lblMarca;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.ComboBox cmbMarca;
         private System.Windows.Forms.RadioButton btnImportado;
