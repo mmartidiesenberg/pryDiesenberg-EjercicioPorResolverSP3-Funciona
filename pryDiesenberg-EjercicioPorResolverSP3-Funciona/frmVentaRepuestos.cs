@@ -21,5 +21,10 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
