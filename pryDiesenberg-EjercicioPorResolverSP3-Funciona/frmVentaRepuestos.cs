@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 {
-    public partial class Form1 : Form
+    public partial class frmVentaRepuestos : Form
     {
-        public Form1()
+        public frmVentaRepuestos()
         {
             InitializeComponent();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
