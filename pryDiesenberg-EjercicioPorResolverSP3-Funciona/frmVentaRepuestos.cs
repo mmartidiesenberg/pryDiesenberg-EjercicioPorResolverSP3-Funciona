@@ -10,21 +10,31 @@ using System.Windows.Forms;
 
 namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 {
+    public struct Repuesto
+    {
+        public int Numero;           // número de repuesto (único)
+        public string Descripcion;   // descripción
+        public char Marca;           // 'P', 'F' o 'R'
+        public string Origen;        // "Nacional" o "Importado"
+        public double Precio;        // precio
+    }
     public partial class frmVentaRepuestos : Form
     {
+        
+
         public frmVentaRepuestos()
         {
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmVentaRepuestos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

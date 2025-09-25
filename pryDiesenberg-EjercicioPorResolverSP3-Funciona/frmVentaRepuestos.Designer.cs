@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentaRepuestos));
             this.grpDatos = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblOrigen = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.mskPrecio = new System.Windows.Forms.MaskedTextBox();
-            this.mskNumero = new System.Windows.Forms.MaskedTextBox();
-            this.btnNacional = new System.Windows.Forms.RadioButton();
-            this.btnImportado = new System.Windows.Forms.RadioButton();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
+            this.btnImportado = new System.Windows.Forms.RadioButton();
+            this.btnNacional = new System.Windows.Forms.RadioButton();
+            this.mskNumero = new System.Windows.Forms.MaskedTextBox();
+            this.mskPrecio = new System.Windows.Forms.MaskedTextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.lblOrigen = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblMarca = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcionRep = new System.Windows.Forms.RichTextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
@@ -66,83 +67,19 @@
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos de los Repuestos";
             // 
-            // lblMarca
+            // cmbMarca
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(19, 49);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(94, 31);
-            this.lblMarca.TabIndex = 0;
-            this.lblMarca.Text = "Marca";
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(19, 127);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(116, 31);
-            this.lblNumero.TabIndex = 1;
-            this.lblNumero.Text = "Número";
-            // 
-            // lblOrigen
-            // 
-            this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Location = new System.Drawing.Point(19, 231);
-            this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(101, 31);
-            this.lblOrigen.TabIndex = 2;
-            this.lblOrigen.Text = "Origen";
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(19, 330);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(97, 31);
-            this.lblPrecio.TabIndex = 3;
-            this.lblPrecio.Text = "Precio";
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(595, 37);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(348, 31);
-            this.lblDescripcion.TabIndex = 4;
-            this.lblDescripcion.Text = "Descripción del Repuesto";
-            // 
-            // mskPrecio
-            // 
-            this.mskPrecio.Location = new System.Drawing.Point(258, 330);
-            this.mskPrecio.Mask = "99999";
-            this.mskPrecio.Name = "mskPrecio";
-            this.mskPrecio.Size = new System.Drawing.Size(168, 38);
-            this.mskPrecio.TabIndex = 4;
-            this.mskPrecio.ValidatingType = typeof(int);
-            // 
-            // mskNumero
-            // 
-            this.mskNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskNumero.Location = new System.Drawing.Point(258, 127);
-            this.mskNumero.Mask = "999999";
-            this.mskNumero.Name = "mskNumero";
-            this.mskNumero.Size = new System.Drawing.Size(168, 38);
-            this.mskNumero.TabIndex = 5;
-            this.mskNumero.ValidatingType = typeof(int);
-            // 
-            // btnNacional
-            // 
-            this.btnNacional.AutoSize = true;
-            this.btnNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNacional.Location = new System.Drawing.Point(258, 197);
-            this.btnNacional.Name = "btnNacional";
-            this.btnNacional.Size = new System.Drawing.Size(151, 35);
-            this.btnNacional.TabIndex = 6;
-            this.btnNacional.TabStop = true;
-            this.btnNacional.Text = "Nacional";
-            this.btnNacional.UseVisualStyleBackColor = true;
-            this.btnNacional.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMarca.FormattingEnabled = true;
+            this.cmbMarca.Items.AddRange(new object[] {
+            "P (Peugeot)",
+            "F (Fiat)",
+            "R (Renault)"});
+            this.cmbMarca.Location = new System.Drawing.Point(258, 41);
+            this.cmbMarca.Name = "cmbMarca";
+            this.cmbMarca.Size = new System.Drawing.Size(168, 39);
+            this.cmbMarca.TabIndex = 8;
             // 
             // btnImportado
             // 
@@ -157,19 +94,82 @@
             this.btnImportado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnImportado.UseVisualStyleBackColor = true;
             // 
-            // cmbMarca
+            // btnNacional
             // 
-            this.cmbMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMarca.FormattingEnabled = true;
-            this.cmbMarca.Items.AddRange(new object[] {
-            "P (Peugeot)",
-            "F (Fiat)",
-            "R (Renault)"});
-            this.cmbMarca.Location = new System.Drawing.Point(258, 41);
-            this.cmbMarca.Name = "cmbMarca";
-            this.cmbMarca.Size = new System.Drawing.Size(168, 39);
-            this.cmbMarca.TabIndex = 8;
+            this.btnNacional.AutoSize = true;
+            this.btnNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNacional.Location = new System.Drawing.Point(258, 197);
+            this.btnNacional.Name = "btnNacional";
+            this.btnNacional.Size = new System.Drawing.Size(151, 35);
+            this.btnNacional.TabIndex = 6;
+            this.btnNacional.TabStop = true;
+            this.btnNacional.Text = "Nacional";
+            this.btnNacional.UseVisualStyleBackColor = true;
+            // 
+            // mskNumero
+            // 
+            this.mskNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mskNumero.Location = new System.Drawing.Point(258, 127);
+            this.mskNumero.Mask = "999999";
+            this.mskNumero.Name = "mskNumero";
+            this.mskNumero.Size = new System.Drawing.Size(168, 38);
+            this.mskNumero.TabIndex = 5;
+            this.mskNumero.ValidatingType = typeof(int);
+            // 
+            // mskPrecio
+            // 
+            this.mskPrecio.Location = new System.Drawing.Point(258, 330);
+            this.mskPrecio.Mask = "99999";
+            this.mskPrecio.Name = "mskPrecio";
+            this.mskPrecio.Size = new System.Drawing.Size(168, 38);
+            this.mskPrecio.TabIndex = 4;
+            this.mskPrecio.ValidatingType = typeof(int);
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(19, 330);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(97, 31);
+            this.lblPrecio.TabIndex = 3;
+            this.lblPrecio.Text = "Precio";
+            // 
+            // lblOrigen
+            // 
+            this.lblOrigen.AutoSize = true;
+            this.lblOrigen.Location = new System.Drawing.Point(19, 231);
+            this.lblOrigen.Name = "lblOrigen";
+            this.lblOrigen.Size = new System.Drawing.Size(101, 31);
+            this.lblOrigen.TabIndex = 2;
+            this.lblOrigen.Text = "Origen";
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Location = new System.Drawing.Point(19, 127);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(116, 31);
+            this.lblNumero.TabIndex = 1;
+            this.lblNumero.Text = "Número";
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(19, 49);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(94, 31);
+            this.lblMarca.TabIndex = 0;
+            this.lblMarca.Text = "Marca";
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(595, 37);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(348, 31);
+            this.lblDescripcion.TabIndex = 4;
+            this.lblDescripcion.Text = "Descripción del Repuesto";
             // 
             // txtDescripcionRep
             // 
@@ -220,9 +220,11 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.txtDescripcionRep);
             this.Controls.Add(this.grpDatos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmVentaRepuestos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Venta de Repuestos";
+            this.Load += new System.EventHandler(this.frmVentaRepuestos_Load);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
