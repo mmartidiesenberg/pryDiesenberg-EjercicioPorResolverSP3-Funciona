@@ -66,7 +66,14 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
                 vecRepuestos[Indice].numeroRepuesto = int.Parse(mskNumero.Text);
 
                 Indice++;
-                }
+
+                string texto = "Marca: " + vecRepuestos[Indice - 1].marca +
+                      " | Origen: " + vecRepuestos[Indice - 1].origen +
+                      " | N°: " + vecRepuestos[Indice - 1].numeroRepuesto +
+                      " | Precio: $" + vecRepuestos[Indice - 1].precio.ToString("F2");
+
+                lstDatos.Items.Add(texto);
+            }
              }
                 
         }
