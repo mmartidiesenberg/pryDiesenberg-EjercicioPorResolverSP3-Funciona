@@ -27,7 +27,25 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 
         private void frmVentaRepuestos_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (
+                string.IsNullOrEmpty(cmbMarca.Text) ||
+                !btnImportado.Checked && !btnNacional.Checked ||
+                !int.TryParse(mskNumero.Text, out int numero) || numero == 0 ||
+                string.IsNullOrWhiteSpace(mskPrecio.Text) ||
+                string.IsNullOrWhiteSpace(txtDescripcionRep.Text)
+)
+            {
+                MessageBox.Show("Los Datos están incompletos, por favor complete todos los campos");
+            }
+            else
+            {
+                MessageBox.Show("Datos enviados correctamente");
+            }
         }
     }
 }
