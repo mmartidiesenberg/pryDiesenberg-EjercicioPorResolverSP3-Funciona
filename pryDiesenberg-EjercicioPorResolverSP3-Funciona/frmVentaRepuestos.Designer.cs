@@ -218,10 +218,10 @@
             // lstDatos
             // 
             this.lstDatos.FormattingEnabled = true;
-            this.lstDatos.Location = new System.Drawing.Point(207, 280);
+            this.lstDatos.Location = new System.Drawing.Point(20, 278);
             this.lstDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstDatos.Name = "lstDatos";
-            this.lstDatos.Size = new System.Drawing.Size(156, 69);
+            this.lstDatos.Size = new System.Drawing.Size(530, 69);
             this.lstDatos.TabIndex = 12;
             // 
             // frmVentaRepuestos

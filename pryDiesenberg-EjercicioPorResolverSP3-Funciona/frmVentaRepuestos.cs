@@ -64,7 +64,7 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 
                 vecRepuestos[Indice].precio = int.Parse(mskPrecio.Text);
                 vecRepuestos[Indice].numeroRepuesto = int.Parse(mskNumero.Text);
-
+                vecRepuestos[Indice].descripcion = txtDescripcionRep.Text;
                 Indice++;
 
                 string texto = "Marca: " + vecRepuestos[Indice - 1].marca +
