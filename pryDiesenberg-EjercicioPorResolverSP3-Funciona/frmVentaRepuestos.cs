@@ -10,15 +10,28 @@ using System.Windows.Forms;
 
 namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 {
-    
+
     public partial class frmVentaRepuestos : Form
     {
-        
+        struct Repuesto
+        {
+            public string marca; //P , R, F
+            public char origen;// I, N
+            public int numeroRepuesto;
+            public float precio;
+            public string descripcion;
 
+        }
         public frmVentaRepuestos()
         {
             InitializeComponent();
         }
+        
+        Repuesto[] vecRepuestos = new Repuesto[100];
+        string Descripcion;
+        float Precio;
+
+        int Indice = 0;
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -27,25 +40,34 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
 
         private void frmVentaRepuestos_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (
-                string.IsNullOrEmpty(cmbMarca.Text) ||
-                !btnImportado.Checked && !btnNacional.Checked ||
-                !int.TryParse(mskNumero.Text, out int numero) || numero == 0 ||
-                string.IsNullOrWhiteSpace(mskPrecio.Text) ||
-                string.IsNullOrWhiteSpace(txtDescripcionRep.Text)
-)
+            if (Indice <= vecRepuestos.Length)
             {
-                MessageBox.Show("Los Datos están incompletos, por favor complete todos los campos");
-            }
-            else
-            {
-                MessageBox.Show("Datos enviados correctamente");
-            }
+                //vecRepuestos[Indice] = Convert.ToInt32(mskNumero.Text) + txtDescripcionRep.Text + mskNumero.Text;
+
+                
+                vecRepuestos[Indice].marca = cmbMarca.Text;
+
+                if (optNacional.Checked == true)
+                {
+                    vecRepuestos[Indice].origen = 'N';
+                }
+
+                if (optImportado.Checked == true)
+                {
+                    vecRepuestos[Indice].origen = 'I';
+                }
+
+                vecRepuestos[Indice].precio = int.Parse(mskPrecio.Text);
+                vecRepuestos[Indice].numeroRepuesto = int.Parse(mskNumero.Text);
+
+                Indice++;
+                }
+             }
+                
         }
     }
-}

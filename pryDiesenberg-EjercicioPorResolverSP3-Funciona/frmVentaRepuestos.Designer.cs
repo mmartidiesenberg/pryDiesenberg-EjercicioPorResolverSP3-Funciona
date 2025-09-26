@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVentaRepuestos));
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.cmbMarca = new System.Windows.Forms.ComboBox();
-            this.btnImportado = new System.Windows.Forms.RadioButton();
-            this.btnNacional = new System.Windows.Forms.RadioButton();
+            this.optImportado = new System.Windows.Forms.RadioButton();
+            this.optNacional = new System.Windows.Forms.RadioButton();
             this.mskNumero = new System.Windows.Forms.MaskedTextBox();
             this.mskPrecio = new System.Windows.Forms.MaskedTextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
@@ -50,8 +50,8 @@
             // grpDatos
             // 
             this.grpDatos.Controls.Add(this.cmbMarca);
-            this.grpDatos.Controls.Add(this.btnImportado);
-            this.grpDatos.Controls.Add(this.btnNacional);
+            this.grpDatos.Controls.Add(this.optImportado);
+            this.grpDatos.Controls.Add(this.optNacional);
             this.grpDatos.Controls.Add(this.mskNumero);
             this.grpDatos.Controls.Add(this.mskPrecio);
             this.grpDatos.Controls.Add(this.lblPrecio);
@@ -83,32 +83,32 @@
             this.cmbMarca.Size = new System.Drawing.Size(86, 24);
             this.cmbMarca.TabIndex = 8;
             // 
-            // btnImportado
+            // optImportado
             // 
-            this.btnImportado.AutoSize = true;
-            this.btnImportado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportado.Location = new System.Drawing.Point(129, 136);
-            this.btnImportado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnImportado.Name = "btnImportado";
-            this.btnImportado.Size = new System.Drawing.Size(89, 21);
-            this.btnImportado.TabIndex = 7;
-            this.btnImportado.TabStop = true;
-            this.btnImportado.Text = "Importado";
-            this.btnImportado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnImportado.UseVisualStyleBackColor = true;
+            this.optImportado.AutoSize = true;
+            this.optImportado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optImportado.Location = new System.Drawing.Point(129, 136);
+            this.optImportado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optImportado.Name = "optImportado";
+            this.optImportado.Size = new System.Drawing.Size(89, 21);
+            this.optImportado.TabIndex = 7;
+            this.optImportado.TabStop = true;
+            this.optImportado.Text = "Importado";
+            this.optImportado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.optImportado.UseVisualStyleBackColor = true;
             // 
-            // btnNacional
+            // optNacional
             // 
-            this.btnNacional.AutoSize = true;
-            this.btnNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNacional.Location = new System.Drawing.Point(129, 102);
-            this.btnNacional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnNacional.Name = "btnNacional";
-            this.btnNacional.Size = new System.Drawing.Size(81, 21);
-            this.btnNacional.TabIndex = 6;
-            this.btnNacional.TabStop = true;
-            this.btnNacional.Text = "Nacional";
-            this.btnNacional.UseVisualStyleBackColor = true;
+            this.optNacional.AutoSize = true;
+            this.optNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optNacional.Location = new System.Drawing.Point(129, 102);
+            this.optNacional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optNacional.Name = "optNacional";
+            this.optNacional.Size = new System.Drawing.Size(81, 21);
+            this.optNacional.TabIndex = 6;
+            this.optNacional.TabStop = true;
+            this.optNacional.Text = "Nacional";
+            this.optNacional.UseVisualStyleBackColor = true;
             // 
             // mskNumero
             // 
@@ -195,7 +195,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(207, 223);
+            this.btnCancelar.Location = new System.Drawing.Point(114, 224);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(60, 26);
@@ -206,7 +206,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(300, 223);
+            this.btnAceptar.Location = new System.Drawing.Point(207, 224);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(60, 26);
@@ -258,8 +258,8 @@
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.ComboBox cmbMarca;
-        private System.Windows.Forms.RadioButton btnImportado;
-        private System.Windows.Forms.RadioButton btnNacional;
+        private System.Windows.Forms.RadioButton optImportado;
+        private System.Windows.Forms.RadioButton optNacional;
         private System.Windows.Forms.MaskedTextBox mskNumero;
         private System.Windows.Forms.MaskedTextBox mskPrecio;
         private System.Windows.Forms.RichTextBox txtDescripcionRep;
