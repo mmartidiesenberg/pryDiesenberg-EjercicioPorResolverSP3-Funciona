@@ -60,9 +60,9 @@
             this.grpDatos.Controls.Add(this.lblMarca);
             this.grpDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDatos.Location = new System.Drawing.Point(20, 19);
-            this.grpDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpDatos.Margin = new System.Windows.Forms.Padding(2);
             this.grpDatos.Name = "grpDatos";
-            this.grpDatos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpDatos.Padding = new System.Windows.Forms.Padding(2);
             this.grpDatos.Size = new System.Drawing.Size(248, 201);
             this.grpDatos.TabIndex = 0;
             this.grpDatos.TabStop = false;
@@ -78,7 +78,7 @@
             "F (Fiat)",
             "R (Renault)"});
             this.cmbMarca.Location = new System.Drawing.Point(129, 21);
-            this.cmbMarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbMarca.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMarca.Name = "cmbMarca";
             this.cmbMarca.Size = new System.Drawing.Size(86, 24);
             this.cmbMarca.TabIndex = 8;
@@ -88,7 +88,7 @@
             this.optImportado.AutoSize = true;
             this.optImportado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optImportado.Location = new System.Drawing.Point(129, 136);
-            this.optImportado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optImportado.Margin = new System.Windows.Forms.Padding(2);
             this.optImportado.Name = "optImportado";
             this.optImportado.Size = new System.Drawing.Size(89, 21);
             this.optImportado.TabIndex = 7;
@@ -102,7 +102,7 @@
             this.optNacional.AutoSize = true;
             this.optNacional.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optNacional.Location = new System.Drawing.Point(129, 102);
-            this.optNacional.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optNacional.Margin = new System.Windows.Forms.Padding(2);
             this.optNacional.Name = "optNacional";
             this.optNacional.Size = new System.Drawing.Size(81, 21);
             this.optNacional.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             this.mskNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskNumero.Location = new System.Drawing.Point(129, 66);
-            this.mskNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskNumero.Margin = new System.Windows.Forms.Padding(2);
             this.mskNumero.Mask = "999999";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(86, 23);
@@ -125,7 +125,7 @@
             // 
             this.mskPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskPrecio.Location = new System.Drawing.Point(129, 172);
-            this.mskPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.mskPrecio.Mask = "99999";
             this.mskPrecio.Name = "mskPrecio";
             this.mskPrecio.Size = new System.Drawing.Size(86, 23);
@@ -186,7 +186,7 @@
             // txtDescripcionRep
             // 
             this.txtDescripcionRep.Location = new System.Drawing.Point(300, 41);
-            this.txtDescripcionRep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcionRep.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcionRep.MaxLength = 50;
             this.txtDescripcionRep.Name = "txtDescripcionRep";
             this.txtDescripcionRep.Size = new System.Drawing.Size(250, 181);
@@ -195,8 +195,8 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(114, 224);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Location = new System.Drawing.Point(116, 224);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(60, 26);
             this.btnCancelar.TabIndex = 10;
@@ -206,8 +206,8 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(207, 224);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Location = new System.Drawing.Point(208, 224);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(60, 26);
             this.btnAceptar.TabIndex = 11;
@@ -219,7 +219,7 @@
             // 
             this.lstDatos.FormattingEnabled = true;
             this.lstDatos.Location = new System.Drawing.Point(20, 278);
-            this.lstDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstDatos.Margin = new System.Windows.Forms.Padding(2);
             this.lstDatos.Name = "lstDatos";
             this.lstDatos.Size = new System.Drawing.Size(530, 69);
             this.lstDatos.TabIndex = 12;
@@ -236,8 +236,9 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.txtDescripcionRep);
             this.Controls.Add(this.grpDatos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmVentaRepuestos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Venta de Repuestos";
