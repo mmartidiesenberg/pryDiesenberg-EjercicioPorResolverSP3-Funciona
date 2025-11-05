@@ -44,7 +44,19 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
+
         {
+            if (string.IsNullOrWhiteSpace(cmbMarca.Text) ||
+                string.IsNullOrWhiteSpace(mskNumero.Text) ||
+                string.IsNullOrWhiteSpace(mskPrecio.Text) ||
+                string.IsNullOrWhiteSpace(txtDescripcionRep.Text) ||
+                (optNacional.Checked == false && optImportado.Checked == false))
+            {
+                MessageBox.Show("Debe completar todos los campos antes de continuar.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (Indice <= vecRepuestos.Length)
             {
                 //vecRepuestos[Indice] = Convert.ToInt32(mskNumero.Text) + txtDescripcionRep.Text + mskNumero.Text;
@@ -68,11 +80,14 @@ namespace pryDiesenberg_EjercicioPorResolverSP3_Funciona
                 Indice++;
 
                 string texto = "Marca: " + vecRepuestos[Indice - 1].marca +
-                      " | Origen: " + vecRepuestos[Indice - 1].origen +
-                      " | N°: " + vecRepuestos[Indice - 1].numeroRepuesto +
-                      " | Precio: $" + vecRepuestos[Indice - 1].precio.ToString("F2");
+               " | Origen: " + vecRepuestos[Indice - 1].origen +
+               " | N°: " + vecRepuestos[Indice - 1].numeroRepuesto +
+               " | Precio: $" + vecRepuestos[Indice - 1].precio.ToString("F2") +
+               " | Descripción: " + vecRepuestos[Indice - 1].descripcion;
+
 
                 lstDatos.Items.Add(texto);
+                Indice++;
             }
              }
                 
